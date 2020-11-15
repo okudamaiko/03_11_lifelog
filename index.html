@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>GOODLIFELOG</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title_letter">GoodLifeLog</h1>
+    </header>
+
+    <main>
+        <p></p>
+        <div class="select">
+            <ul>
+                <li id="aim_e">目標入力</li><br>
+                <li id="result_e">達成状況入力</li><br>
+                <li id="table_r">達成度表示</li>
+            </ul>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            //他のページへ飛ぶ
+            $('#aim_e').on('click', function () {
+                window.location.href = 'aim.html';
+            });
+            $('#result_e').on('click', function () {
+                window.location.href = 'result.html';
+            });
+            $('#table_r').on('click', function () {
+                window.location.href = 'table.html';
+            });
+
+
+        })
+    </script>
+
+</body>
+
+</html>
